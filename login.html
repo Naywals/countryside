@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="CSS/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    margin:0;
+}
+
+/* Header reste en haut */
+.header{
+    padding:15px;
+}
+
+/* Container pour centrer login */
+.login-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+
+.login-box{
+    background:white;
+    padding:50px;
+    border-radius:10px;
+    width:300px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+}
+
+.login-box input{
+    width:90%;
+    padding:10px;
+    margin:30px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.login-box button{
+    width:100%;
+    padding:20px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.login-box button:hover{
+    background:green;
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="header"> 
+    <h1 class="title">Ranking</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="destination.html">Destination</a>
+        <a href="login.html" class="btnonly">Login</a>
+  <a href="calculator.html" class="calonly">calculate</a>
+    </nav>
+</header>
+
+<div class="login-container">
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+<script>
+function login(){
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user === "admin" && pass === "1234"){
+        alert("connect succeful !");
+    }
+    else{
+        alert("Wrong username or password X");
+    }
+}
+</script>
+
+</body>
+</html>

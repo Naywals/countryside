@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>navigation</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <header class="header"> 
+            <h1 class="title">Ranking</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+               
+                <a href="contact.html">Contact</a>
+                <a href="destination.html">Destination</a>
+                <a href="login.html" class="btnonly">Login</a>
+                  <a href="calculator.html" class="calonly">calculate</a>
+            </nav>
+        </header>
+        <div class="slideshow"> 
+        <div class="slides"> 
+               
+
+            <div class ="slide">  
+       <img src="image/hpo.webp " alt="hold">
+           </div>
+            <div class ="slide"> 
+           <img src="image/page12.jpeg" alt="hold">
+            </div>
+           
+            <div class ="slide"> 
+           <img src="image/page11.jpg" alt="hold">
+           </div>
+            <div class ="slide"> 
+           <img src="image/page17.jpg" alt="hold">
+           </div>
+        </div>
+       
+   <button id="prev">❮</button>
+  <button id="next">❯</button>
+  </div>
+
+ <script> 
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+let index = 0;
+
+document.getElementById('next').addEventListener('click', () => {
+    index++;
+    if (index >= totalSlides) index = 0; // boucle vers la première slide
+    slides.style.transform = `translateX(-${index * (100 / totalSlides)}%)`;
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    index--;
+    if (index < 0) index = totalSlides - 1; // boucle vers la dernière slide
+    slides.style.transform = `translateX(-${index * (100 / totalSlides)}%)`;
+});
+
+</script>
+
+
+   <footer class="Dfooter">
+        <p>Copyright &copy; WELCOME to this WEBSITE created in 2026 ,Enjoy exploring and appreciating every step inside </p>
+        <p style="color:azure;font-size:30px; text-shadow: 0 0 25px blue, 0 0 5px darkblue"><em>"In The Countryside, The Soul Finds Rest"</em></p>
+        </footer>
+
+
+    </body>
+
+</html>

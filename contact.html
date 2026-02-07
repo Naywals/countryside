@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>navigation</title>
+        <link rel=stylesheet href="CSS/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <style>
+      body{
+        background: linear-gradient(135deg,#71b7e6,#9b59b6);
+        background-repeat: no-repeat;
+        }
+
+    </style>
+    </head>
+    <body>
+      <header class="header">
+        <h1 class="title">Ranking</h1> 
+      <nav class="navbar">
+         
+        <a href="index.html"> Home</a>
+         
+        <a href="contact.html">Contact</a> 
+         <a href="destination.html">Destination</a> 
+          <a href="login.html" class="btnonly">Login</a>
+          <a href="calculator.html" class="calonly">calculate</a>
+      </nav>
+      </header>
+      
+        <div class="contact-container"> 
+        <h1>Contact form </h1>
+          </div>
+          <form> 
+        <div class="line"> 
+
+          <div class="champ">
+            <label for="Tname">First Name</label>
+            <input type="text" id="Tname" placeholder="Enter first name">
+
+            <label for="number">Phone Number</label>
+            <input type="text" id="number" placeholder="Enter Phone Number">
+             
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email">
+          </div>
+
+          <div class="champ">
+            <label for="Fname">Last Name</label>
+            <input type="text" id="Fname" placeholder="Enter last name">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="france">France</option>
+              <option value="maurice">Maurice</option>
+              <option value="madagascar">Madagascar</option>
+              <option value="usa">USA</option>
+            
+            </select>
+          <div class="gender-details">
+            <label for="gender">Gender</label>
+            <div class="category">
+              <label >
+                <input type="radio" name="gender">
+                <span>Male</span>
+              </label>
+                
+            <label>
+                <input type="radio" name="gender">
+                <span>Female</span>
+            </label>
+            </div>
+             </div>
+            <div class="btnsubmit"> 
+            <input type="submit" value="Submit">
+             </div>
+
+          
+          </div>
+       </div>
+        </form>
+        <script>
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    alert("connected succeful!"); 
+    form.reset(); 
+});
+</script>
+    </body>
+</html>

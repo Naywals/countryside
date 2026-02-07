@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>navigation</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <style>/* this for destination only*/
+        
+      body{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family:sans-serif;
+        background-color:saddlebrown;
+        }
+        .domain{
+            text-align: center;
+            padding:10px;
+            color:green;
+            border: 2px solid oldlace;
+            margin:2px;
+        }
+        .card_container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:50px;
+    row-gap: 40px ;
+    max-width: 800px;
+    margin-top: 50px;
+   margin-left: 450px;;
+
+}
+.card{
+    width:425px;
+    background-color:#f0f0f0;
+    border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.7);
+    margin:20px;
+}
+.card_container .card:last-child{
+    grid-column:span 2;
+    justify-self:center;
+}
+.card img {
+    width:100%;
+    height: auto;
+}
+.card-content{
+    padding:20px;
+}
+.card-content h1{
+    font-size: 28px;
+    margin-bottom:12px;
+    
+}
+.footer-content{
+    text-align: center;
+    color:aqua;
+    border:2px solid aqua;
+}
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height:1.8;
+}
+@media(max-width:600px){
+    .card_container{
+        grid-template-columns:1fr;
+    }
+
+    .card_container .card:last-child{
+        grid-column:span 1;
+    }
+}
+
+    </style> 
+    </head>
+    <body>
+        <header class="header"> 
+            <h1 class="title">Ranking</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="destination.html">Destination</a>
+                  <a href="login.html" class="btnonly">Login</a>
+                  <a href="calculator.html" class="calonly">calculate</a>
+            </nav>
+        </header>
+
+            <div class="domain"> 
+          <h1>SENSATION STRONG</h1>
+        <p>point of view</p>
+        </div>
+        <div class="card_container"> 
+        <div class="card">
+         <img src="image/page25.jpg">
+         <div class="card-content">
+            <h1>Pedestrian Sign.</h1>
+            <p> Hiking signage:This rustic wooden sign is a directional marker. The white pictogram depicts a hiker with a backpack and walking stick.
+                its function:It serves as a "silent guide." It points to the right, confirming to the hiker that she is on the right path to reach a marked trail. It is a symbol of safety and organized adventure.</p>
+         </div>  
+        </div>
+            <div class="card">
+         <img src="image/page23.webp">
+          <div class="card-content"> 
+            <h1>high mountain</h1>
+         <p> the three children are looking at the mountains with some other people to admire the view , they are in a moutain cirque or glacial valley , surrounded by steep rock faces and rugged ridges. </p>
+          </div>
+          </div>  
+        
+         <div class="card">
+         <img src="image/page19.jpg">
+         <div class="card-content"> 
+            <h1>tiered Waterfall</h1>
+         <p> It's a waterfall :we can see The water doesn't fall in one go, but slides over several levels of limestone rock. This creates a very aesthetically pleasing curtain of white, foaming water.
+             The pool: At the foot of the falls, the water gathers in a large pool. The color of the water varies from emerald green to light blue, indicating very pure water, often rich in minerals.</p>
+             </div>
+         </div>  
+
+           <div class="card">
+         <img src="image/page1.png">
+         <div class="card-content"> 
+            <h1> A farm in the countryside</h1>
+         <p> It is a grouping of animals, specific buildings and cultivated areas.<br>
+        Cattle: Cows (for milk or meat), bulls, and calves.
+
+Sheep and Goats: Sheep (rams, ewes, lambs) and goats (bucks, kids).<br>
+
+Pigs: Pigs, sows, and piglets.<br>
+
+Equines: Horses, donkeys, or mares with their foals.<br>
+
+The Farmyard: This is where hens, roosters, chicks, ducks, geese, turkeys, and often rabbits live.
+</p>
+</div>
+         </div>  
+
+<div class="card">
+         <img src="image/canoes.webp">
+         <div class="card-content"> 
+            <h1>canoe</h1>
+         <p> position: On your knees or sitting on a raised bench.
+            Paddle: Simple (a single blade at one end).
+            For thrills, we go down mountain rapids and torrents.
+            origin:Native American (transport and hunting).</p>
+             </div>
+         </div>
+        </div>
+        <footer class="footer-content">
+        <h1>Follow US</h1>
+      
+        </footer>   
+        </body>
+</html>
